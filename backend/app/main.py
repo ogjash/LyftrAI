@@ -24,6 +24,9 @@ ALLOWED_ORIGINS = [
     for origin in os.getenv("ALLOWED_ORIGINS", "http://localhost:3000").split(",")
     if origin.strip()
 ]
+ALLOWED_ORIGINS = list(dict.fromkeys(
+    [*ALLOWED_ORIGINS, "https://lyftr-ai-chat.vercel.app"]
+))
 ENABLE_FAILURE_SIMULATION = os.getenv("ENABLE_FAILURE_SIMULATION", "false").lower() == "true"
 LLM_KEYS = [
     key.strip()
