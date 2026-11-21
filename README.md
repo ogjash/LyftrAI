@@ -1,7 +1,7 @@
 # 1. Live URLs
 
-- Frontend: https://your-frontend.example
-- Backend: https://your-backend.example
+- Frontend: https://lyftr-ai-chat.vercel.app
+- Backend: https://lyftrai.onrender.com
 
 # 2. Run locally: with Docker and without
 
